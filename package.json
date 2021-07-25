@@ -1,12 +1,13 @@
 {
-  "name": "builder-webpack",
-  "version": "1.0.0",
+  "name": "builder-webpack-geektime",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/_mocha",
     "eslint": "eslint ./lib --fix"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {

@@ -1,16 +1,20 @@
 const assert = require("assert");
 
-describe("webpack-base-test case", () => {
-  const baseConfig = require("../../lib/webpack.base");
+describe("webpack.base.js test case", () => {
+  const baseConfig = require("../../lib/webpack.base.js");
 
   it("entry", () => {
     assert.equal(
-      baseConfig.entry.index,
-      "E:/git/webpackdemo/builder-webpack/test/smoke/template/src/index/index.jsx"
-    ),
-      assert.equal(
-        baseConfig.entry.search,
-        "E:/git/webpackdemo/builder-webpack/test/smoke/template/src/search/index.jsx"
-      );
+      baseConfig.entry.index.indexOf(
+        "webpack-builder/test/smoke/template/src/index/index.js"
+      ) > -1,
+      true
+    );
+    assert.equal(
+      baseConfig.entry.search.indexOf(
+        "webpack-builder/test/smoke/template/src/search/index.js"
+      ) > -1,
+      true
+    );
   });
 });
