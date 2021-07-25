@@ -1,0 +1,31 @@
+{
+  "name": "builder-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/_mocha",
+    "eslint": "eslint ./lib --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.1.4",
+    "postcss-loader": "^2.1.6",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.46.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "glob-all": "^3.2.1",
+    "mini-css-extract-plugin": "^0.6.0",
+    "postcss-flexbugs-fixes": "^3.3.1"
+  }
+}
